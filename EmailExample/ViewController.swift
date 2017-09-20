@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CellSelectedDelegate {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var senderLabel: UILabel!
+    @IBOutlet weak var contentsLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func read(email: Email) {
+        //read this email
+        titleLabel.text = email.subject
+        senderLabel.text = email.sender
+        contentsLabel.text = email.contents
+    }
 }
 

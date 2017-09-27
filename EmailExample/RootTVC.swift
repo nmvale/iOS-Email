@@ -2,8 +2,8 @@
 //  RootTVC.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/18/17.
-//  Copyright © 2017 Byrne. All rights reserved.
+//  Created by Nick Vale on 9/18/17.
+//  Copyright © 2017 NMV. All rights reserved.
 //
 
 import UIKit
@@ -11,6 +11,7 @@ import UIKit
 protocol CellSelectedDelegate {
     func read(email: Email)
 }
+
 
 class RootTVC: UITableViewController {
     
@@ -24,7 +25,7 @@ class RootTVC: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +51,7 @@ class RootTVC: UITableViewController {
         
         let selectedEmail = emails[indexPath.row]
         delegate?.read(email: selectedEmail)
+
     }
 
     

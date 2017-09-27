@@ -2,8 +2,8 @@
 //  MenuTVC.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/20/17.
-//  Copyright © 2017 Byrne. All rights reserved.
+//  Created by Nick Vale on 9/18/17.
+//  Copyright © 2017 NMV. All rights reserved.
 //
 
 import UIKit
@@ -20,7 +20,7 @@ class MenuTVC: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {

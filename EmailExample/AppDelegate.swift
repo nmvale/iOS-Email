@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  EmailExample
 //
-//  Created by Emily Byrne on 9/18/17.
-//  Copyright © 2017 Byrne. All rights reserved.
+//  Created by Nick Vale on 9/18/17.
+//  Copyright © 2017 NMV. All rights reserved.
 //
 
 import UIKit
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let detailVC = splitVC.viewControllers.last as! ViewController
         
         rootTVC.delegate = detailVC
- */
+*/
         
         return true
     }

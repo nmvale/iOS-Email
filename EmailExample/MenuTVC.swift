@@ -15,6 +15,9 @@ class MenuTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "nmvale@asu.edu"
+        // Title that displays in menu navigation bar
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
